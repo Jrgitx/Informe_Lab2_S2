@@ -126,7 +126,7 @@ public class Electo {
             return votante.getYaVoto();
         }
 
-        //Utiliza el método verificarVotante
+        //Utiliza el metodo verificarVotante
         //luego registra el voto (se tiene que crear un nuevo Voto para agregarlo al Candidato)
         //en el Candidato correspondiente y lo añade al historial. Posteriormente tiene que cambiar el estado del Votante
         public boolean registrarVoto(Votante votante, int candidatoId) {
@@ -197,7 +197,7 @@ public class Electo {
 
             StringBuilder sb = new StringBuilder("=== Resultados de la Elección ===\n");
             for (Candidato c : listaCandidatos) {
-                //El método append añade la representación en texto de su argumento
+                //El metodo append aniade la representación en texto de su argumento
                 //(puede ser otro String, un número, un objeto, etc.) al final de lo que ya contiene el buffer.
                 sb.append("Candidato ")
                         .append(c.getNombre())
@@ -211,7 +211,7 @@ public class Electo {
                             sb.append(" votos\n");
                         }
             }
-            //sb.toString convierte todo el contenido acumulado en el StringBuilder en un objeto String inmutable
+            //sb.toString convierte el contenido acumulado en el StringBuilder en un objeto String inmutable
             return sb.toString();
         }
     }
